@@ -1,0 +1,99 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Appliquer le style roboto a body */
+body {
+    font-family: "Roboto"  sans-serif;
+}
+header {
+    background-color: #024959;/* Couleur de l'arriere plan */
+   
+}
+/* styliser la navbar */
+.navbar {
+    display: inline; 
+    margin: 10px;  
+    margin-left: 250px; 
+    
+
+}
+.navbar ul {
+    list-style: none;
+     margin-left: 800px; 
+   
+}
+.navbar li {
+    display: inline-block;
+    margin-right: 10px;
+  
+}
+.navbar li a{
+    padding: 10px 20px; /* Ajouter de l'espace autour du texte */
+    border-radius: 5%;
+    color:  #D9B29C;/* Couleur du texte */
+    text-decoration: none; /* Supprimer la décoration du texte */
+    font-size: 20px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+}
+main {
+    margin-top: 30px;
+   
+}
+.section1 {
+padding: 20px;
+color: #024959;
+background-color: #024959;
+height: 600px;
+border-radius: 5% 0 5% 0;
+
+}
+
+.section1 h1{
+    width: 50%; 
+    margin: 20px;
+    color: #D9B29C;
+   
+}
+.container{
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    width: 50%;
+    height: 450px;
+    border-bottom: 5%;
+    background-color:#A66249 ;
+    border-radius: 0 5% 0 5%;
+    box-shadow: 16px -16px #FEFAE0 ;
+}
+.container img {
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    border-radius: 7% 0 7% 0;
+    box-shadow: #024959 10px 5px 5px; 
+}
+.container p{
+    float: left;
+    color:  #D9B29C;
+}
+#work li {
+    border:5%;
+    background-color:#A66249;
+    height: 30%;
+    width:30%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  

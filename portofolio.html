@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon portofolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
+<body class="body">
+    <header class="header">
          <!-- Header with navigation -->
-         <nav>
+         <nav class="navbar">
             <ul>
                 <li><a href="portofolio.html">Home</a></li>
                 <li><a href="#About">About</a></li>
@@ -20,37 +21,47 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
           <!-- About Section -->
-          <section1 id="About">
-            <h1 color="#535353">About</h1>
+          <section id="About" class="section1">
+            <h1>About</h1>
+            <div class="container">
             <!-- My bio -->
             <img src="Images et videos/profil.JPG" alt="Profile Picture" width="335" height="400">
-            <p>Hi there! I'm Bailaou Diallo you can also call me Bya, a dedicated web developer passionate about creating engaging online experiences. I bring websites to life with responsive design and intuitive user interfaces. I thrive on tackling challenges and finding innovative solutions to complex problems. When I'm not coding, you can find me exploring the outdoors, experimenting with new recipes, or reading some books.</p>
-        </section1>
+            <p>Hi there! I'm Bailaou Diallo you can also call me Bya,<br> a dedicated web developer passionate about creating engaging online experiences. <br>I bring websites to life with responsive design and intuitive user interfaces.<br> I thrive on tackling challenges and finding innovative solutions to complex problems.<br>When I'm not coding, you can find me exploring the outdoors,<br> experimenting with new recipes, or reading some books.</p>
+            </div>
+        </section>
         <!-- Section: Work -->
-        <section2 id="work">
+        <section id="work">
             <h1>Work</h1>
             <!-- Description de mon travail -->
-            <p>I specialize in several including:</p>
+            <p>I specialize in several skills including:</p>
             <!-- Description de mes competences -->
-            <ul>
-                <li>
-                    <h2>HTML</h2>
-                    <img src="Images et videos/html5-logo-31813.png">
+      
+            <div class="card">
+                <img src="Images et videos/html5-logo-31813.png">
+                 <div class="html">
+                    <h1><b>HTML</b></h1>
                     <p>Familiar with structuring web pages using semantic HTML5 elements.</p>
-                </li>
-                <li>
-                    <h2>CSS</h2>
-                    <img src="Images et videos/CSS.3.svg.png" width="256" height="300">
+                 </div>
+            </div>    
+            <div class="card">
+                <img src="Images et videos/CSS.3.svg.png" width="256" height="300">
+                <div class="css">
+                    <h1><bold>CSS</bold></h1>
                     <p>Skilled in styling web pages with CSS, including layout, typography, and responsive design.</p>
-                </li>
-                <li>
-                    <h2>JavaScript</h2>
-                    <img src="Images et videos/JavaScript-Logo-500x281.png" width="300" height="256">
-                    <p>Experienced in client-side scripting with JavaScript, including DOM manipulation and event handling.</p>
-                </li>
-                <li>
+                </div>
+            </div> 
+            <div class="card">
+                <img src="Images et videos/JavaScript-Logo-500x281.png" width="300" height="256">
+            <div class="JavaScript">
+                <h2>JavaScript</h2>
+                <p>Experienced in client-side scripting with JavaScript, including DOM manipulation and event handling.</p>
+                </div>
+            </div> 
+                       
+                  
+               
                     <h2>Python and Machine Learning</h2>
                     <img src="Images et videos/xml-dl-phyton.jpg.pagespeed.ic.VrdnAHmLSX.webp" width="256" height="256">
                     <p>Proficient in data manipulation, visualization, and analysis using libraries such as Pandas, NumPy, and Matplotlib. Also, have a basic understanding of machine learning algorithms and techniques.</p>
@@ -66,28 +77,25 @@
                     <p>Proficient in coding with MicroPython to create interactive projects and experiments with BBC micro:bit microcontrollers.</p>
                 </li>
             </ul>
-        </section2>
+        </section>
          <!-- Section: Resume -->
-         <section3 id="Resume">
+         <section id="Resume">
             <h1>Resume</h1>
             <!-- My resume -->
             <img src="Images et videos/img2.JPG" width="335" height="600">
-            <p>I am a dedicated web developer with expertise in various technologies including HTML, CSS, JavaScript, Python, and more. With a passion for creating engaging online experiences, I have developed numerous websites and applications, ranging from responsive landing pages to complex web applications.</p>
+            <p>I am a dedicated web developer with expertise in various technologies including HTML, CSS, JavaScript, Python, and more.<br> With a passion for creating engaging online experiences, I have developed numerous websites and applications, ranging from responsive landing pages to complex web applications.</p>
             <p>My experience also extends to data analysis and machine learning, where I have applied my skills to extract valuable insights from large datasets and develop predictive models for various applications.</p>
             <p>In addition to my technical skills, I am proficient in electronic prototyping with Arduino and MicroPython, allowing me to integrate hardware components and sensors into my projects, creating innovative IoT solutions.</p>
             <p>I am constantly seeking new challenges and opportunities to expand my skills and contribute to impactful projects.</p>
-        </section3>
+        </section>
         <!--Lien photo vers le bog-->
         <section>
             <a href="Blog.html"><img src="Images et videos/blog.JPG" width="335" height="500"></a>
 
         </section>
-    </main>
-
-    <footer>
-        <!-- Pour me contacter-->
-        <section>
-            <h1 id="Contact">Contact</h1>
+          <!-- Inscription-->
+          <section>
+            <h1 id="inscription">Contact</h1>
             <form>
                 <label for="Name">Name</label>
                 <input type="text" name="Name" id="Name"><br>
@@ -96,11 +104,20 @@
                 <label for="Subject">Subject</label>
                 <input type="text" name="Subject" id="Subject"><br>
                 <label for="Message">Your Message</label>
-                <input type="text" name="Message" id="Message"><br>
+                <textarea name="" id="" cols="30" rows="10"></textarea><br>
             </form>
             <button>Send Message</button>
-        </section>
+         </section>
+    </main>
+
+    <footer>
+        <h1>Nos resaux</h1>
+        <a href="https://www.linkedin.com/in/bailaou-diallo-20a780158/">
+        <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+        </a>
+      
     </footer>
+    <!---->
     
 </body>
 </html>
