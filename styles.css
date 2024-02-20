@@ -4,14 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /* Appliquer le style roboto a body */
 body {
     font-family: "Roboto"  sans-serif;
 }
+
+
 header {
     background-color: #024959;/* Couleur de l'arriere plan */
    
 }
+
+
 /* styliser la navbar */
 .navbar {
     display: inline; 
@@ -20,16 +26,22 @@ header {
     
 
 }
+
+
 .navbar ul {
     list-style: none;
-     margin-left: 800px; 
+     margin-left: 600px; 
    
 }
+
+
 .navbar li {
     display: inline-block;
     margin-right: 10px;
   
 }
+
+
 .navbar li a{
     padding: 10px 20px; /* Ajouter de l'espace autour du texte */
     border-radius: 5%;
@@ -38,10 +50,14 @@ header {
     font-size: 20px; /* Taille de la police */
     font-weight: bold; /* Gras */
 }
+
+
 main {
     margin-top: 30px;
    
 }
+
+
 .section1 {
 padding: 20px;
 color: #024959;
@@ -51,12 +67,16 @@ border-radius: 5% 0 5% 0;
 
 }
 
+
+
 .section1 h1{
     width: 50%; 
     margin: 20px;
     color: #D9B29C;
    
 }
+
+
 .container{
     display: flex;
     padding: 20px;
@@ -68,6 +88,7 @@ border-radius: 5% 0 5% 0;
     border-radius: 0 5% 0 5%;
     box-shadow: 16px -16px #FEFAE0 ;
 }
+
 .container img {
     float: left;
     margin-right: 100px;
@@ -75,25 +96,55 @@ border-radius: 5% 0 5% 0;
     border-radius: 7% 0 7% 0;
     box-shadow: #024959 10px 5px 5px; 
 }
+
 .container p{
     float: left;
     color:  #D9B29C;
 }
-#work li {
+
+
+#work  {
     border:5%;
     background-color:#A66249;
-    height: 30%;
-    width:30%;
+    padding: 20px;
+    height: 1150px;
+    border-radius: 0 5% 0 5%;
 }
+
+#work h1{
+    color: #D9B29C;
+    font-size: 30px;
+}
+ #work p{
+    color: #D9B29C;
+    font-size: 20px;
+    margin-bottom: 20Px;
+ }
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
+    background-color: #8C0303 ;
+    margin: 0 10px; /* Marge autour des cartes pour l'espacement */
+    text-align: center;
+    line-height: 30px; /* Centrer verticalement le texte */
+    color: #024959;
+    box-shadow: 16px -16px #024959
   }
+
 
   img {
     border-radius: 5px 5px 0 0;
   }
-  
-  
+   
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.html{
+    padding-left: 30px;
+}
